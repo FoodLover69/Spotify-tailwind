@@ -10,21 +10,45 @@
 <body >
 <header class="header">
     <div class="container">
-        <div class="header__wrapper bg-slate-500 content-center justify-center">
+        <div class="header__wrapper  bg-black  ">
+          
+                <div class="branding flex p-5 justify-between ">
 
-            <div class="branding ">
-                <img src="../images/spotify_logo.svg" alt="">
+                    <div class="flex justify-items-start">
+                        <i class="fa-brands fa-spotify text-white text-[30px] "></i>
+                        <p class="text-white ml-1"><b>Spotify</b></p>
+                    </div>
+
+                    <div class=" toggle__menu ">
+                        <span class="block h-1 w-7  bg-white mb-1 "></span>
+                        <span class="block h-1 w-7  bg-white mb-1 "></span>
+                        <span class="block h-1 w-7  bg-white mb-1 "></span>
+                        
+                    </div>
+                </div>
+
+                <div class="header__nav hidden bg-slate-200 lg:bg-red-500 absolute right-[-100vw]">
+                        
+                    <h1  class="hover:text-green-500"><b>Premium</b></h1>
+                    <h1  class="hover:text-green-500"><b>Support</b></h1>
+                    <h1  class="hover:text-green-500"><b>Download</b></h1>
+                    <h1 >-</h1>
+                    <h2 class="hover:text-green-500" >Sign up</h2>
+                    <h2  class="hover:text-green-500">Log in</h2>
+            
             </div>
 
-            <div class="header__nav bg-zinc-500 lg:bg-red-500">
-                <ul class="flex sm:grid gap-4 grid-cols-2">
-                    
-                    <!-- <li><a href="#" class="text-white" >Home</a></li>
-                    <li><a href="#" class="text-white" >About</a></li>
-                    <li><a href="#" class="text-white" >Contact</a></li> -->
-                </ul>
-            </div>
+            <!-- <div class="absolute right-[-100vw] h-[100vh] w-[80vw] z-[999]"> </div> -->
+                                    <!-- <ul class=" text-center ">
+                            
+                            <li><a href="#" class="text-black space-y-[20px]" >Home</a></li>
+                            <li><a href="#" class="text-white space-y-[20px]" >About</a></li>
+                            <li><a href="#" class="text-white space-y-[20px]" >Contact</a></li>
+                        </ul> -->
+
         </div>
+    </div>
+</header>
 
 
   
@@ -32,7 +56,7 @@
                 <div class="container bg-[#c5f0c9]">
                     <div class="premium__ p-5">
                         <div>
-                            <h1 class="text-[28px] text-[#283ea3] py-3 ">Get Premium free for 2 months</h1>
+                            <h1 class="text-[28px] text-[#283ea3] py-3 "><b>Get Premium free for 2 months</b></h1>
                             <h2 class="text-[18px] text-[#283ea3]  pb-8">Only $9.99/month after. Cancel anytime.</h2>
                         </div>
 
@@ -54,50 +78,59 @@
 
             <section class="premium__Services">
                 <div class="container">
-                    <div class="premium__Content p-5">
-                        <h1 class="text-center text-[28px] p-6">Why go Premium?</h1>
+                    <div class=" p-5">
+                        <h1 class="text-center text-[28px] p-6 " ><b>Why go Premium?</b></h1>
                            
+                        <div class="premium_content lg:flex lg:grid-cols-4  md:grid md:grid-cols-2  justify-evenly">
 
-                            <div class="sm:grid  grid-cols-2 flex pb-5">
-                                <div>
-                                    <img src="../images/download_media.png" class="w-[100px] h-[100px]" alt="">
+                            
+                                <div class="md:grid-cols-2 flex lg:flex-col  pb-5 ">
+                                    <div >
+                                        <img src="../images/download_media.png" class="w-[150px] h-[150px] lg:justify-center" alt="">
+                                    </div>
+                                    <div class="p-6">
+                                        <h2 class="text-[21px]"><b>Download music.</b></h2>
+                                        <p class="text-[16px]">Listen anywhere.</p>
+                                    </div>
                                 </div>
-                                <div class="p-6">
-                                    <h2 class="text-[21px]"><b>Download music.</b></h2>
-                                    <p class="text-[16px]">Listen anywhere.</p>
+    
+                                <div class=" lg:flex-col  flex  pb-5">
+                                    <div>
+                                        <img src="../images/!_media.png" class="w-[150px] h-[150px]" alt="">
+                                    </div>
+                                    <div class="p-6">
+                                        <h2  class="text-[21px]"><b>Ad-free music listening.</b></h2>
+                                        <p class="text-[16px]">Listen anywhere.</p>
+                                    </div>
                                 </div>
-                            </div>
+                            
 
-                            <div class="sm:grid  grid-cols-2 flex  pb-5">
-                                <div>
-                                    <img src="../images/!_media.png" class="w-[100px] h-[100px]" alt="">
+                            
+                                <div class=" lg:flex-col  flex pb-5">
+                                    <div>
+                                        <img src="../images/media_varius.png" class="w-[150px] h-[150px]" alt="">
+                                    </div>
+                                    <div class="p-6">
+                                        <h2  class="text-[21px]"><b>Play any song.</b></h2>
+                                        <p class="text-[16px]">Enjoy nonstop music.</p>
+                                    </div>
                                 </div>
-                                <div class="p-6">
-                                    <h2  class="text-[21px]"><b>Ad-free music listening.</b></h2>
-                                    <p class="text-[16px]">Listen anywhere.</p>
-                                </div>
-                            </div>
+    
+                                <div class="lg:flex-col flex pb-5">
+                                    <div>
+                                        <img src="../images/play_media.png" class="w-w-[150px] h-[150px]"  alt="">
+                                    </div>
+                                    <div class="p-6">
+                                        <h2  class="text-[21px]"><b>Unlimited skips.</b></h2>
+                                        <p class="text-[16px]">Even on mobile.</p>
+                                    </div>
+                                </div>   
+                            
+ 
 
-                            <div class="sm:grid grid-cols-2 flex pb-5">
-                                <div>
-                                    <img src="../images/media_varius.png" class="w-[100px] h-[100px]" alt="">
-                                </div>
-                                <div class="p-6">
-                                    <h2  class="text-[21px]"><b>Play any song.</b></h2>
-                                    <p class="text-[16px]">Enjoy nonstop music.</p>
-                                </div>
-                            </div>
+                        </div>           
+                        </div>
 
-                            <div class="sm:gridgrid-cols-2 flex pb-5">
-                                <div>
-                                    <img src="../images/play_media.png" class="w-[100px] h-[100px]"  alt="">
-                                </div>
-                                <div class="p-6">
-                                    <h2  class="text-[21px]"><b>Unlimited skips.</b></h2>
-                                    <p class="text-[16px]">Even on mobile.</p>
-                                </div>
-                            </div>              
-                         </div>
                     </div>
                 </div>
             </section>
@@ -108,133 +141,153 @@
                 <div class="pick__Content m-7 ">
                     <h1 class="text-center  p-5 text-[30px]" ><b>Pick your Premium</b></h1>
                     <p class="text-center"> Listen without limits on your phone, speaker, and other devices.</p>
-                    <div class="logo__list">
-                        <!-- lkjsdfkjsdf -->
+                    <div class="logo__list flex p-5 gap-2 justify-center">
+                        <img src="../images/logo1.svg" alt="">
+                        <img src="../images/logo2.svg" alt="">
+                        <img src="../images/logo3.svg" alt="">
+                        <img src="../images/logo1.svg" alt="">
+                        <img src="../images/logo2.svg" alt="">
                     </div>
-
-                    <div class="m-3 ">
-                        <div class="  p-6 bg-white rounded-xl ">
+                    
+                <div class="lg:grid lg:grid-cols-4">
+                    <div class=" m-3">
+                        <div class="card  p-6 bg-white rounded-xl shadow-2xl">
 
                             <div class="border-b-[1px] border-b-black">
-                                <h2 class="p-1 bg-cyan-400 w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
+                                <h2 class="p-1 bg-[#0d72da] w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
                                 <h1 class=" text-[24px]"><b>Individual</b></h1>
                                 <p class="pb-1">$9.99/month after offer period</p>
-                                <p class="pb-1">1 account</p>
-                           
+                                <p class="pb-1 mb-5">1 account</p>                       
                             </div>
 
-                            
-                            <div class="pb-5">
-                                <div class="flex mb-2 ">
+                        <div class="body">
+                            <div class=" mt-7">
+                                <div class="flex  ">
                                     <i class="fa-solid fa-check p-1"></i>
                                     <p class="text-[16px]">Ad-free music listening</p>
                                 </div>
-                                <div class="flex mb-2 ">
+                                <div class="flex ">
                                     <i class="fa-solid fa-check p-1"></i>
                                     <p class="text-[16px]">Play anywhere - even offline</p>
                                 </div>
-                                <div class="flex  mb-2">
+                                <div class="flex  ">
                                     <i class="fa-solid fa-check p-1"></i>
                                     <p class="text-[16px]">On-demand playback</p>
                                 </div>
+                                
                             </div>
+                        </div>
 
                             <div>
-                                <div class="mb-9 w-full ">   
-                                    <a class="border-2 bg-[#191414] py-3  px-28 text-center rounded-3xl mb-9 w-full text-white"  href="#"> <b>GET STARTED </b></a>
+                                <div class="my-5  ">   
+                                    <a class="border-2 bg-[#191414] py-3   inline-block text-center rounded-3xl  w-full text-white"  href="#"> <b>GET STARTED </b></a>
                                 </div>
                             </div>
+                        
 
-                            <p class="text-[11px]  mb-9"> <a href=""> <u>Terms and conditions apply.</u> </a>  Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
+                            <p class="text-[11px]  "> <a href=""> <u>Terms and conditions apply.</u> </a>Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
                         </div>
                     </div>
 
-                    <div class="m-3 ">
-                        <div class=" p-6 bg-white rounded-xl ">
+                    <div class=" m-3 ">
+                        <div class="card p-6 bg-white rounded-xl shadow-2xl">
                             <div class="border-b-[1px] border-b-black">
-                                <h2 class="p-1 bg-cyan-400 w-32 text-center rounded-xl text-white"><b>1 month free</b></h2>
+                                <h2 class="p-1 bg-[#0d72da] w-32 text-center rounded-xl text-white"><b>1 month free</b></h2>
                                 <h1 class=" text-[24px]"><b>Duo</b></h1>
                                 <p class="pb-1">$12.99/month after offer period</p>
-                                <p class="pb-1">2 accounts</p>
+                                <p class="pb-1 mb-5">2 accounts</p>
                             
                              </div>
-                            <div class="pb-5">
-                                <div class="flex mb-2 ">
+                        <div class="body">
+                            <div class=" mt-7">
+                                <div class="flex  ">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">Ad-free music listening</p>
+                                    <p class="text-[16px]">2 Premium accounts for a couple under one roof</p>
                                 </div>
-                                <div class="flex mb-2 ">
+                                <div class="flex  ">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">Play anywhere - even offline</p>
+                                    <p class="text-[16px]">Ad-free music listening, play offline, on-demand playback</p>
                                 </div>
-                                <div class="flex  mb-2">
-                                    <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">On-demand playback</p>
-                                </div>
+
                             </div>
+                        </div>
 
                             <div>
-                                <div class="mb-9 w-full ">   
-                                    <a class="border-2 bg-[#191414] py-3  px-28 text-center rounded-3xl mb-9 w-full text-white"  href="#"> <b>GET STARTED </b></a>
+                                <div class="my-5  ">   
+                                    <a class="border-2 bg-[#191414] py-3   inline-block text-center rounded-3xl  w-full text-white"  href="#"> <b>GET STARTED </b></a>
                                 </div>
                             </div>
+                        
 
-                            <p class="text-[11px]  mb-9"> <a href=""> <u>Terms and conditions apply.</u> </a>  Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
+                            <p class="text-[11px] "> <a href=""> <u>Terms and conditions apply.</u> </a>  1 month free not available for users who have already tried Premium.</p>
                         </div>
                     </div>
 
-                    <div class="m-3 ">
-                        <div class=" p-6 bg-white rounded-xl ">
+                    <div class=" m-3 ">
+                        <div class="card p-6 bg-white rounded-xl shadow-2xl ">
                             <div class="border-b-[1px] border-b-black">
-                                <h2 class="p-1 bg-cyan-400 w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
+                                <h2 class="p-1 bg-[#0d72da] w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
                                 <h1 class=" text-[24px]"><b>Family</b></h1>
-                                <p class="pb-1">$9.99/month after offer period</p>
-                                <p class="pb-1">1 account</p>
+                                <p class="pb-1">$15.99/month after offer period</p>
+                                <p class="pb-1 mb-5">6 accounts</p>
                             </div>
 
 
-                            
-                            <div class="pb-5">
+                        <div class="body">
+                            <div class=" mt-7">
                                 <div class="flex mb-2 ">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">Ad-free music listening</p>
+                                    <p class="text-[16px]">6 Premium accounts for family members living under one roof</p>
                                 </div>
                                 <div class="flex mb-2 ">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">Play anywhere - even offline</p>
+                                    <p class="text-[16px]">Block explicit music</p>
                                 </div>
                                 <div class="flex  mb-2">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">On-demand playback</p>
+                                    <p class="text-[16px]">Ad-free music listening, play offline, on-demand playback</p>
+                                </div>
+                                <div class="flex  mb-2">
+                                    <i class="fa-solid fa-check p-1"></i>
+                                    <p class="text-[16px]">Spotify Kids: a separate app made just for kids</p>
                                 </div>
                             </div>
+                        </div>
 
+ 
                             <div>
-                                <div class="mb-9 w-full ">   
-                                    <a class="border-2 bg-[#191414] py-3  px-28 text-center rounded-3xl mb-9 w-full text-white"  href="#"> <b>GET STARTED </b></a>
+                                <div class="my-5   ">   
+                                    <a class="border-2 bg-[#191414] py-3   inline-block text-center rounded-3xl  w-full text-white"  href="#"> <b>GET STARTED </b></a>
                                 </div>
                             </div>
+                        
 
-                            <p class="text-[11px]  mb-9"> <a href=""> <u>Terms and conditions apply.</u> </a>  Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
+                            <p class="text-[11px]  mb-9"> <a href=""> <u>Terms and conditions apply.</u> </a>  1 month free not available for users who have already tried Premium.</p>
                         </div>
                     </div>
 
-                    <div class="m-3 ">
-                        <div class=" p-6 bg-white rounded-xl ">
+                    <div class=" m-3">
+                        <div class="card p-6 bg-white rounded-xl shadow-2xl">
                             <div class="border-b-[1px] border-b-black">
-                                <h2 class="p-1 bg-cyan-400 w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
+                                <h2 class="p-1 bg-[#0d72da] w-32 text-center rounded-xl text-white"><b>2 months free</b></h2>
                                 <h1 class=" text-[24px]"><b>Student</b></h1>
-                                <p class="pb-1">$9.99/month after offer period</p>
-                                <p class="pb-1">1 account</p>
+                                <p class="pb-1">$4.99/month after offer period</p>
+                                <p class="pb-1 mb-5">1 account</p>
                             </div>
 
-                            
-                            <div class="pb-5">
+                        <div class="body">
+                            <div class=" mt-7">
                                 <div class="flex mb-2 ">
                                     <i class="fa-solid fa-check p-1"></i>
-                                    <p class="text-[16px]">Ad-free music listening</p>
+                                    <p class="text-[16px]">Hulu (With Ads) plan</p>
                                 </div>
                                 <div class="flex mb-2 ">
+                                    <i class="fa-solid fa-check p-1"></i>
+                                    <p class="text-[16px]">Ad-free music listening
+
+                                    </p>
+                                </div>
+                                <div class="flex  mb-2">
                                     <i class="fa-solid fa-check p-1"></i>
                                     <p class="text-[16px]">Play anywhere - even offline</p>
                                 </div>
@@ -243,22 +296,33 @@
                                     <p class="text-[16px]">On-demand playback</p>
                                 </div>
                             </div>
+                        
+                        </div>
 
                             <div>
-                                <div class="mb-9 w-full ">   
-                                    <a class="border-2 bg-[#191414] py-3  px-28 text-center rounded-3xl mb-9 w-full text-white"  href="#"> <b>GET STARTED </b></a>
+                                <div class="my-5  ">   
+                                    <a class="border-2 bg-[#191414] py-3   inline-block text-center rounded-3xl  w-full text-white"  href="#"> <b>GET STARTED </b></a>
                                 </div>
                             </div>
+                       
+                       
 
-                            <p class="text-[11px]  mb-9"> <a href=""> <u>Terms and conditions apply.</u> </a>  Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
+
+                            <p class="text-[11px]  mb-9"> <a href="">  </a>Offer currently includes access to Hulu (With Ads) plan, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <u>Terms and conditions apply.</u></p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="container bg-black">
+            <div class="container bg-black  py-11 p-3 ">
+             <div class=" lg:flex lg:justify-between">
+                <div class=" p-2 pb-8 flex ">
+                    <i class="fa-brands fa-spotify text-white text-[30px] "></i>
+                    <p class="text-white ml-1"><b>Spotify</b></p>
+                </div>
 
                 <div class="p-2">
                     <p  class="mb-4 text-gray-500"><b>COMPANY</b></p>
@@ -284,13 +348,56 @@
                     <h2 class="mb-3 text-white">Web Player</h2>
                     <h2 class="mb-3 text-white">Free Mobile App</h2>
                 </div>
+
+                <div class="p-5 flex gap-4">
+                  <span class=" p-2 inline-block   w-[45px] h-[45px] bg-gray-800 rounded-full"><i class="fa-brands fa-instagram text-white text-[25px] ml-[2.8px] mt-[1.5px]"></i></span>  
+                   <span class=" p-2  inline-block w-[45px] h-[45px] bg-gray-800   rounded-full"><i class="fa-brands fa-twitter text-white text-[25px] ml-[2.8px] mt-[1.5px]"></i></span>    
+                   <span class=" p-2 inline-block w-[45px] h-[45px] bg-gray-800  rounded-full"><i class="fa-brands fa-facebook text-white text-[25px] ml-[2.8px] mt-[1.5px]"></i></span> 
+                </div>
             </div>
+
+            
+                <div class="flex justify-end">
+                    <div class="flex content-center">
+                        <i  class="fa-solid fa-earth-americas text-white"></i>
+                        <p class="mb-3 p-1 text-[11px] flex  text-white">USA</p>
+                    </div>
+                </div>
+
+                <div class="lg:flex ">
+                    <div class="grid grid-cols-5 w-[100%] justify-between  mb-3">
+                        <div class=" col-span-3 ">
+                            <a class=" pr-4 text-[11px]  text-white" href="">Legal</a>
+                            <a class=" pr-4  text-[11px]  text-white" href="">Privacy Center</a>
+                            <a class=" pr-4 text-[11px]  text-white" href="">Privacy Policy</a>
+                            <a class=" pr-4 text-[11px]  text-white" href="">Cookies</a>
+                            <a class=" pr-4 text-[11px]  text-white" href="">About Ads</a>
+                            <a class=" pr-4 text-[11px]  text-white" href="">Accesibility</a>
+                            <a class=" pr-4 text-[11px]  text-white" href="">Notice at collection</a>
+                            <a class=" pr-4  text-[13px] text-white" href="">Cookies Settings</a>
+                        </div>
+
+                        <div class="flex col-span-2 justify-end">
+                            <a class="mb-3 p-1 text-[11px]  text-white" href="">2023 Spotify AB</a>
+                        </div>    
+                    </div>
+                </div>
+
+
+
+
+            
+
+
 
 
         </footer>
 
     </div>
 </header>
-    
+    <script src="./script.js">
+
+    </script>
 </body>
+
 </html>

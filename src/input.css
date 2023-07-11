@@ -6,7 +6,41 @@
     @apply mx-auto max-w-[55cm] w-full;
 }
 
-/* *{
+@layer components{
+    .header__nav.open{
+        @apply right-0 block text-white bg-black w-72 h-[100%] p-5;
+    }
+
+    .header__nav.open h1{
+        @apply text-[36px] ;
+    }
+
+
+
+    .header__nav.open h2{
+        @apply text-[30px] ;
+    }
+
+    .card{ 
+        @apply min-h-[41rem] bg-pink-50;
+    }
+
+    .body{
+        @apply min-h-[14rem] ;
+    }
+
+    
+
+    /*.premium_content {
+        @apply flex grid-cols-2 justify-evenly;
+    }*/
+    
+    
+    
+}
+
+
+*{
     border: 1px solid red;
-} */
+} 
 
